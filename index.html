@@ -1,110 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ND Constructions</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Code & Project Vault</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="site-header">
-        <h1 class="brand-title">ND CONSTRUCTION</h1>
-    </header>
-    <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav">
-        <span class="hamburger"></span>
-    </button>
-    <nav id="main-nav">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#whychoose">Why Choose Us</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section class="hero" id="home">
-            <h1>Build Your Dream Home with ND Constructions</h1>
-            <p>Luxury. Authenticity. Craftsmanship. Your vision, our expertise.</p>
-        </section>
-        <section class="services" id="services">
-            <h2>Our Services</h2>
-            <div class="services-list">
-                <div class="service-item">
-                    <span class="service-icon">🏠</span>
-                    <h3>Custom Home Building</h3>
-                    <p>From concept to completion, we craft bespoke homes tailored to your lifestyle and aspirations.</p>
-                </div>
-                <div class="service-item">
-                    <span class="service-icon">🛋️</span>
-                    <h3>Interior Customization</h3>
-                    <p>Personalize every room with premium finishes, unique layouts, and luxury details.</p>
-                </div>
-                <div class="service-item">
-                    <span class="service-icon">🏡</span>
-                    <h3>Exterior Customization</h3>
-                    <p>Enhance curb appeal with elegant facades, landscaping, and outdoor living spaces.</p>
-                </div>
-                <div class="service-item">
-                    <span class="service-icon">🎨</span>
-                    <h3>In & Out Painting</h3>
-                    <p>Professional painting services for interiors and exteriors, using only the finest materials.</p>
-                </div>
-                <div class="service-item">
-                    <span class="service-icon">🪑</span>
-                    <h3>Wooden Furniture</h3>
-                    <p>Custom-designed wooden furniture to complement your home’s unique style.</p>
-                </div>
-                <div class="service-item">
-                    <span class="service-icon">💡</span>
-                    <h3>Electrical Works</h3>
-                    <p>Safe, modern electrical installations and smart home integrations.</p>
-                </div>
-                <div class="service-item">
-                    <span class="service-icon">🍳</span>
-                    <h3>Kitchen Services</h3>
-                    <p>Luxury kitchen design, remodeling, and installation for culinary excellence.</p>
-                </div>
-                <div class="service-item">
-                    <span class="service-icon">🛁</span>
-                    <h3>Bathroom Services</h3>
-                    <p>Spa-inspired bathrooms with premium fixtures and finishes.</p>
-                </div>
-                <div class="service-item">
-                    <span class="service-icon">🚗</span>
-                    <h3>Garage Services</h3>
-                    <p>Functional and stylish garage solutions for storage and vehicles.</p>
-                </div>
-            </div>
-        </section>
-        <section class="whychoose" id="whychoose">
-            <h2>Why Choose Us</h2>
-            <ul class="why-list">
-                <li><b>Unmatched Craftsmanship:</b> Every project is a masterpiece, built with precision and passion.</li>
-                <li><b>Personalized Approach:</b> We listen, understand, and deliver homes that reflect your unique vision.</li>
-                <li><b>Premium Materials:</b> Only the finest materials and finishes for lasting beauty and durability.</li>
-                <li><b>Transparent Process:</b> Clear communication and honest pricing at every step.</li>
-                <li><b>On-Time Delivery:</b> We respect your time and deliver on our promises.</li>
-                <li><b>Comprehensive Services:</b> From design to finishing touches, we handle it all.</li>
-                <li><b>Customer Satisfaction:</b> Our clients’ happiness is our greatest achievement.</li>
-            </ul>
-        </section>
-        <section class="contact" id="contact">
-            <h2>Contact Us</h2>
-            <p>Ready to start your dream project? <br>Email: <a href="mailto:info@ndconstructions.com">info@ndconstructions.com</a> <br>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 ND Constructions. All rights reserved.</p>
-    </footer>
-    <script>
-    // Hamburger menu toggle
-    const navToggle = document.querySelector('.nav-toggle');
-    const nav = document.getElementById('main-nav');
-    navToggle.addEventListener('click', function() {
-        nav.classList.toggle('open');
-        const expanded = navToggle.getAttribute('aria-expanded') === 'true';
-        navToggle.setAttribute('aria-expanded', !expanded);
-    });
-    </script>
+  <header>
+    <div class="logo">🗂️ My Code Vault</div>
+    <button class="theme-toggle" title="Toggle dark/light mode" aria-label="Toggle theme">🌙</button>
+  </header>
+  <main>
+    <div class="sections-bar" id="sectionsBar"></div>
+    <div id="sectionPage"></div>
+  </main>
+  <div id="modalRoot"></div>
+  <script src="script.js"></script>
 </body>
 </html>
